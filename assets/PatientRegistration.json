@@ -1,0 +1,440 @@
+{
+	"_id": "PatientRegistration",
+	"form_elements": [
+		{
+			"rows": "0",
+			"datatype": "display",
+			"colspan": "0",
+			"cols": "3",
+			"value": "",
+			"label": "BEGIN GENERAL TABLE",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "display-tbl-begin",
+			"identifier": "field1403",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "First Name",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "forenames",
+			"options": [
+				{
+					"name": "optional",
+					"value": "false"
+				}
+			],
+			"size": "30"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Middle Name",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "middle_name",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": " 25"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Surname",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "surname",
+			"options": [
+				{
+					"name": "optional",
+					"value": "false"
+				}
+			],
+			"size": " 25"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "SA Id No.",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "country_id_number",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "20"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Passport No.",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "passport_id",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "20"
+		}, {
+			"rows": "0",
+			"datatype": "long",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Population Group",
+			"enumerations": "African/Black,Coloured,Indian/Asian,Other,White,",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "dropdown",
+			"identifier": "population_group_id",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "long",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Language",
+			"enumerations": "Afrikaans,Dutch,English,French,German,Greek,Gujarati,Hindi,Other,Polish,Portuguese,Sepedi(Northern Sotho),Sesotho(Southern Sotho),Setswana,Sign language,Siswati,Tamil,Tshivenda,Urdu,Xitsonga,Yiddish,isiNdebele,isiXhosa,isiZulu,",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "dropdown",
+			"identifier": "language_id",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "DateTime",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Birth Date",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "birthdate",
+			"identifier": "birth_date",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "int",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Age",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "age_at_first_attendence",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}, {
+					"name": "max",
+					"value": "100"
+				}
+			],
+			"size": "3"
+		}, {
+			"rows": "0",
+			"datatype": "int",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Gender",
+			"visible": "true",
+			"closeRow": "flase",
+			"inputType": "gender",
+			"identifier": "sex",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "long",
+			"colspan": "2",
+			"cols": "0",
+			"value": "",
+			"label": "Marital status",
+			"enumerations": "Single,Married,In a Relationship",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "select",
+			"identifier": "marital_status",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Cell",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "cell",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "byte",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Permission to contact client by SMS?",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "Yes/No",
+			"identifier": "permission_to_sms",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Tel",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "phone",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "20"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "E-mail",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "email",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "40"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "Address Line 1",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "address_1",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "60"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "Address Line 2",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "address_2",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "60"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "City",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "city",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": " 25"
+		}, {
+			"rows": "0",
+			"datatype": "long",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Province",
+			"enumerations": "Eastern Cape,Free State,Gauteng,KwaZulu-Natal,Limpopo,Mpumalanga,North West,Northern Cape,Western Cape",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "select",
+			"identifier": "province",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Postal Code",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "postal_code",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "4"
+		}, {
+			"rows": "0",
+			"identifier": "form-save",
+			"width": "770",
+			"datatype": "display",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "Save",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "button",
+			"height": "30",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			]
+		}, {
+			"rows": "0",
+			"datatype": "display",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "END GENERAL TABLE",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "display-tbl-end",
+			"identifier": "field1404",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}
+	],
+	"formOrder": "0",
+	"couchapp": {},
+	"formType": {
+		"id": 1,
+		"name": "Basic Form"
+	},
+	"flow": {
+		"flowOrder": 1,
+		"id": 9,
+		"name": "New Patient"
+	},
+	"label": "Patient Registration"
+}

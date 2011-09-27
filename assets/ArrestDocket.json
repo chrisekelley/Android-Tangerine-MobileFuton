@@ -1,0 +1,425 @@
+{
+	"_id": "ArrestDocket",
+	"form_elements": [
+		{
+			"rows": "0",
+			"datatype": "display",
+			"colspan": "0",
+			"cols": "4",
+			"value": "",
+			"label": "BEGIN TABLE ",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "display-tbl-begin",
+			"identifier": "field1427",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "display",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Arrest Details",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "display-header",
+			"identifier": "arrest_details_section",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "DateTime",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Date of Arrest",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "emptyDate",
+			"identifier": "date_of_arrest",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "number",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "C.A.S.",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "cas",
+			"options": [
+				{
+					"name": "absolute-max",
+					"value": "130"
+				}, {
+					"name": "absolute-min",
+					"value": "0"
+				}, {
+					"name": "max",
+					"value": "95"
+				}
+			],
+			"size": "10"
+		}, {
+			"rows": "0",
+			"datatype": "long?",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "Police Station",
+			"enumerations": "Aberdeen (Eastern Cape),Acornhoek (Mpumalanga),Actonville (Gauteng),Addo (Eastern Cape),Adelaide (Eastern Cape),Afsondering (Eastern Cape),Aggeneys (Northern Cape),Akasia (Gauteng),Albertinia (Western Cape),Alberton (Gauteng),Alexander Bay (Northern Cape),Alexandra (Gauteng),Alexandra Road (KwaZulu-Natal),Alexandria (Eastern Cape),Algoapark (Eastern Cape),Alice (Eastern Cape),Alicedale (Eastern Cape),Aliwal North (Eastern Cape),Allanridge (Free State),Alldays (Limpopo),Amalia (North West),Amangwe (KwaZulu-Natal),Amanzimtoti (KwaZulu-Natal),Amersfoort (Mpumalanga),Amsterdam (Mpumalanga),Apel (Limpopo),Arlington (Free State),Ashton (Western Cape),Assen (North West),Atamelang (North West),Athlone (Western Cape),Atlantis (Western Cape),Atteridgeville (Gauteng),Avondale (Eastern Cape),Babanango (KwaZulu-Natal),Badplaas (Mpumalanga),Bainsvlei (Free State),Balfour (Mpumalanga),Balfour (Eastern Cape),Bandelierkop (Limpopo),Barberton (Mpumalanga),Barkly East (Eastern Cape),Barkly West (Northern Cape),Barrage (Gauteng),Barrydale (Western Cape),Bathlaros (Northern Cape),Batho (Free State),Bathurst (Eastern Cape),Bavianskloof (Eastern Cape),Bayswater (Free State),Bayview (KwaZulu-Natal),Beacon Bay (Eastern Cape),Beaufort West (Western Cape),Bedford (Eastern Cape),Bedfordview (Gauteng),Bedwang (North West),Bela Bela (Limpopo),Belfast (Mpumalanga),Bell (Eastern Cape),Bellair (KwaZulu-Natal),Bellville (Western Cape),Bellville South (Western Cape),Belmont (Northern Cape),Benoni (Gauteng),Berea (KwaZulu-Natal),Bergville (KwaZulu-Natal),Berlin (Eastern Cape),Besters (KwaZulu-Natal),Bethal (Mpumalanga),Bethanie (North West),Bethelsdorp (Eastern Cape),Bethlehem (Free State),Bethulie (Free State),Bhekithemba (KwaZulu-Natal),Bhisho (Eastern Cape),Biesiesvlei (North West),Bisho Airport (Eastern Cape),Bishop Lavis (Western Cape),Bishopstowe (KwaZulu-Natal),Bityi (Eastern Cape),Bizana (Eastern Cape),Blinkpan (Mpumalanga),Bloemhof (North West),Bloemspruit (Free State),Bluewater (Eastern Cape),Boetsap (Northern Cape),Boipatong (Gauteng),Boitekong (North West),Boithitho (North West),Boithuso (Free State),Boksburg (Gauteng),Boksburg North (Gauteng),Bolo (Eastern Cape),Bolobedu (Limpopo),Bolotwa (Eastern Cape),Bonnievale (Western Cape),Boons (North West),Booysens (Gauteng),Boschkop (Gauteng),Boshoek (North West),Boshof (Free State),Boston (KwaZulu-Natal),Bothasig (Western Cape),Bothaville (Free State),Botshabelo (Free State),Brackendowns (Gauteng),Brackenfell (Western Cape),Brakpan (Gauteng),Bramley (Gauteng),Brandfort (Free State),Brandvlei (Northern Cape),Bray (North West),Bredasdorp (Western Cape),Breyten (Mpumalanga),Bridge Camp (Eastern Cape),Brighton Beach (KwaZulu-Natal),Brits (North West),Britstown (Northern Cape),Brixton (Gauteng),Bronkhorspruit (Gauteng),Bronville (Free State),Brooklyn (Gauteng),Buffalo Flats (Eastern Cape),Buffelshoek (North West),Bulgerivier (Limpopo),Bultfontein (Free State),Bulwer (KwaZulu-Natal),Burgersdorp (Eastern Cape),Burgersfort (Limpopo),Bushbuckridge (Mpumalanga),Butterworth (Eastern Cape),Cala (Eastern Cape),Calcutta (Mpumalanga),Caledon (Western Cape),Calitzdorp (Western Cape),Calvinia (Northern Cape),Cambridge (Eastern Cape),Campbell (Northern Cape),Camperdown (KwaZulu-Natal),Camps Bay (Western Cape),Cape Town Central (Western Cape),Carnarvon (Northern Cape),Carolina (Mpumalanga),Cathcart (Eastern Cape),Cato Manor (KwaZulu-Natal),Cedarville (Eastern Cape),Centani (Eastern Cape),Ceres (Western Cape),Ceza (KwaZulu-Natal),Chalumna (Eastern Cape),Charl Cilliers (Mpumalanga),Charlestown (KwaZulu-Natal),Chatsworth (KwaZulu-Natal),Chrissiesmeer (Mpumalanga),Christiana (North West),Chungwa (Eastern Cape),Citrusdal (Western Cape),Clanwilliam (Western Cape),Claremont (Western Cape),Clarens (Free State),Cleveland (Gauteng),Clocolan (Free State),Cloetesville (Western Cape),Coffee Bay (Eastern Cape),Cofimvaba (Eastern Cape),Colenso (KwaZulu-Natal),Colesberg (Northern Cape),Coligny (North West),Committees (Eastern Cape),Conville (Western Cape),Cookhouse (Eastern Cape),Cornelia (Free State),Cradock (Eastern Cape),Cramond (KwaZulu-Natal),Creighton (KwaZulu-Natal),Crystal Park (Gauteng),Cullinan (Gauteng),Cumberland (Limpopo),Cyferskuil (North West),Dalasile (Eastern Cape),Dalton (KwaZulu-Natal),Danielskuil (Northern Cape),Dannhauser (KwaZulu-Natal),Darling (Western Cape),Davel (Mpumalanga),Daveyton (Gauteng),Dawn Park (Gauteng),Dbn International (KwaZulu-Natal),De Aar (Northern Cape),De Deur (Gauteng),De Doorns (Western Cape),De Rust (Western Cape),Dealsville (Free State),Deben (Northern Cape),Delareyville (North West),Delft (Western Cape),Delmas (Mpumalanga),Delportshoop (Northern Cape),Deneysville (Free State),Dennilton (Limpopo),Despatch (Eastern Cape),Devon (Gauteng),Dewetsdorp (Free State),Df Malan, Cape Town Internat Airport (Western Cape),Dientjie (Mpumalanga),Diepkloof (Gauteng),Dieprivier (Western Cape),Dimbaza (Eastern Cape),Dingleton (Northern Cape),Dirkiesdorp (Mpumalanga),Dobsonville (Gauteng),Donnybrook (KwaZulu-Natal),Dordrecht (Eastern Cape),Doring Bay (Western Cape),Doringkloof (Eastern Cape),Dorset (Limpopo),Douglas (Northern Cape),Douglasdale (Gauteng),Dube (Gauteng),Dududu (KwaZulu-Natal),Duduza (Gauteng),Dullstroom (Mpumalanga),Duncan Village (Eastern Cape),Dundee (KwaZulu-Natal),Dunnottar (Gauteng),Durban Central (KwaZulu-Natal),Durban Harbour (KwaZulu-Natal),Durban North (KwaZulu-Natal),Durbanville (Western Cape),Dwaalboom (Limpopo),Dysselsdorp (Western Cape),East London (Eastern Cape),Edenburg (Free State),Edenpark (Gauteng),Edenvale (Gauteng),Edenville (Free State),Eendekuil (Western Cape),Eersterust (Gauteng),Ekombe (KwaZulu-Natal),Ekulindeni (Mpumalanga),Ekuvukeni (KwaZulu-Natal),Elands Bay (Western Cape),Elands Height (Eastern Cape),Elandskraal (Limpopo),Elandslaagte (KwaZulu-Natal),Eldorado Park (Gauteng),Elliot (Eastern Cape),Elliotdale (Eastern Cape),Elsburg (Gauteng),Elsies River (Western Cape),Elukwatini (Mpumalanga),Emanguzi (KwaZulu-Natal),Ematimatolo (KwaZulu-Natal),Ematsheni (KwaZulu-Natal),Embalenhle (Mpumalanga),Empangeni (KwaZulu-Natal),Emzinoni (Mpumalanga),Engcobo (Eastern Cape),Ennerdale (Gauteng),Erasmia (Gauteng),Ermelo (Mpumalanga),Eshowe (KwaZulu-Natal),Esikhawini (KwaZulu-Natal),Estcourt (KwaZulu-Natal),Etwatwa (Gauteng),Evander (Mpumalanga),Evaton (Gauteng),Evatt (KwaZulu-Natal),Excelcior (Free State),Ezakheni (KwaZulu-Natal),Ezibayeni (KwaZulu-Natal),Ezibeleni (Eastern Cape),Ezinqoleni (KwaZulu-Natal),Fairland (Gauteng),Fauresmith (Free State),Fernie (Mpumalanga),Ficksburg (Free State),Fish Hoek (Western Cape),Flagstaff (Eastern Cape),Florida (Gauteng),Floukraal (Eastern Cape),Folweni (KwaZulu-Natal),Fort Beaufort (Eastern Cape),Fort Brown (Eastern Cape),Fouriesburg (Free State),Franklin (KwaZulu-Natal),Franschhoek (Western Cape),Fraserburg (Northern Cape),Ga-Rankuwa (Gauteng),Galeshewe (Northern Cape),Gamalakhe (KwaZulu-Natal),Gans Bay (Western Cape),Ganyesa (North West),Gariepdam (Free State),Garies (Northern Cape),Garsfontein (Gauteng),Gelvandale (Eastern Cape),Genadendal (Western Cape),George (Western Cape),Germiston (Gauteng),Gilead (Limpopo),Gingindlovu (KwaZulu-Natal),Giyani (Limpopo),Glen (Free State),Glen Grey (Eastern Cape),Glencoe (KwaZulu-Natal),Glendale (KwaZulu-Natal),Gluckstadt (KwaZulu-Natal),Goedemoed (Free State),Gonubie (Eastern Cape),Goodwood (Western Cape),Gordons Bay (Western Cape),Gowan Lea (KwaZulu-Natal),Graaff-Reinet (Eastern Cape),Graafwater (Western Cape),Grabouw (Western Cape),Grahamstown (Eastern Cape),Graskop (Mpumalanga),Grassy Park (Western Cape),Gravelotte (Limpopo),Greenwood Park (KwaZulu-Natal),Greylingstad (Mpumalanga),Greytown (KwaZulu-Natal),Griekwastad (Northern Cape),Groblersdal (Limpopo),Groblershoop (Northern Cape),Groenvlei (KwaZulu-Natal),Groot Brakrivier (Western Cape),Groot Drakenstein (Western Cape),Groot Marico (North West),Grootvlei (Mpumalanga),Gugulethu (Western Cape),Haenertsburg (Limpopo),Hamburg (Eastern Cape),Hammanskraal (Gauteng),Hammersdale (KwaZulu-Natal),Hankey (Eastern Cape),Hanover (Northern Cape),Harare (Western Cape),Harburg (KwaZulu-Natal),Harding (KwaZulu-Natal),Harrismith (Free State),Hartbeesfontein (North West),Hartbeespoortdam (North West),Hartebeeskop (Mpumalanga),Hartswater (Northern Cape),Hattingspruit (KwaZulu-Natal),Hazyview (Mpumalanga),Healdtown (Eastern Cape),Heidedal (Free State),Heidelberg (Western Cape),Heidelberg (Gauteng),Heilbron (Free State),Helpmekaar (KwaZulu-Natal),Henderson (Eastern Cape),Hendrina (Mpumalanga),Henneman (Free State),Hercules (Gauteng),Hermanus (Western Cape),Hertzogville (Free State),Heuningspruit (Free State),Heuningvlei (Northern Cape),Hibberdene (KwaZulu-Natal),Highflats (KwaZulu-Natal),Hillbrow (Gauteng),Hillcrest (KwaZulu-Natal),Hilton-Kzn (KwaZulu-Natal),Himeville (KwaZulu-Natal),Hlababomvu (Eastern Cape),Hlabisa (KwaZulu-Natal),Hlanganani (Limpopo),Hlobane (KwaZulu-Natal),Hlogotlou (Limpopo),Hluhluwe (KwaZulu-Natal),Hob House (Free State),Hoedspruit (Limpopo),Hofmeyr (Eastern Cape),Hogsback (Eastern Cape),Hondeklip Bay (Northern Cape),Honeydew (Gauteng),Hoopdal (Limpopo),Hoopstad (Free State),Hopefield (Western Cape),Hopetown (Northern Cape),Hout Bay (Western Cape),Howick (KwaZulu-Natal),Huhudi (North West),Humansdorp (Eastern Cape),Humewood (Eastern Cape),Ibisi (KwaZulu-Natal),Ida (Eastern Cape),Idutywa (Eastern Cape),Ikageng (North West),Ilinge (Eastern Cape),Impendle (KwaZulu-Natal),Inanda (KwaZulu-Natal),Inchanga (KwaZulu-Natal),Indwe (Eastern Cape),Ingogo (KwaZulu-Natal),Ingwavuma (KwaZulu-Natal),Int Airport Jhb (Gauteng),Intsikeni (KwaZulu-Natal),Inyibiba (Eastern Cape),Ipelegeng (North West),Isipingo (KwaZulu-Natal),Itsoseng (North West),Ivory Park (Gauteng),Jabulani (Gauteng),Jacobsdal (Free State),Jagersfontein (Free State),Jamestown (Eastern Cape),Jan Kempdorp (Northern Cape),Jane Furse (Limpopo),Jansenville (Eastern Cape),Jeffreys Bay (Eastern Cape),Jeppe (Gauteng),Jericho (North West),Jhb Central (Gauteng),Joubertina (Eastern Cape),Jouberton (North West),Jozini (KwaZulu-Natal),Kaapmuiden (Mpumalanga),Kabega Park (Eastern Cape),Kabokweni (Mpumalanga),Kagisanong (Free State),Kagiso (Gauteng),Kakamas (Northern Cape),Kameeldrift (Gauteng),Kamesh (Eastern Cape),Kamieskroon (Northern Cape),Kanana (North West),Kanoneiland (Northern Cape),Kanyamazane (Mpumalanga),Kareedouw (Eastern Cape),Kathu (Northern Cape),Katkop (Eastern Cape),Katlehong (Gauteng),Kei Bridge (Eastern Cape),Kei Mouth (Eastern Cape),Kei Road (Eastern Cape),Keimoes (Northern Cape),Keiskammahoek (Eastern Cape),Kemptonpark (Gauteng),Kenhardt (Northern Cape),Kensington (Western Cape),Kenton On Sea (Eastern Cape),Kestell (Free State),Kgomotso (North West),Khayelitsha (Western Cape),Khuma (North West),Kidds Beach (Eastern Cape),Kimberley (Northern Cape),King William'S Town (Eastern Cape),Kingsley (KwaZulu-Natal),Kinkelbos (Eastern Cape),Kinross (Mpumalanga),Kirkwood (Eastern Cape),Kirstenhof (Western Cape),Klapmuts (Western Cape),Klawer (Western Cape),Kleinbulhoek (Eastern Cape),Kleinmond (Western Cape),Kleinsee (Northern Cape),Kleinvlei (Western Cape),Klerksdorp (North West),Klerkskraal (North West),Klipgat (North West),Klipplaat (Eastern Cape),Kliprivier (Gauteng),Kliptown (Gauteng),Knysna (Western Cape),Koffiefontein (Free State),Kokstad (KwaZulu-Natal),Kolomane (Eastern Cape),Komaggas (Northern Cape),Komatipoort (Mpumalanga),Komga (Eastern Cape),Kommissiepoort (Free State),Kopanong (Free State),Koppies (Free State),Koster (North West),Kraaifontein (Western Cape),Kranskop (KwaZulu-Natal),Kriel (Mpumalanga),Kroonstad (Free State),Krugersdorp (Gauteng),Kubusiedrift (Eastern Cape),Kuilsrivier (Western Cape),Kuruman (Northern Cape),Kuyasa (Northern Cape),Kwa Dabeka (KwaZulu-Natal),Kwa Mashu (KwaZulu-Natal),Kwa Thema (Gauteng),Kwa-Mbonambi (KwaZulu-Natal),Kwaaiman (Eastern Cape),Kwadukuza (KwaZulu-Natal),Kwadwesi (Eastern Cape),Kwaggafontein (Mpumalanga),Kwamakutha (KwaZulu-Natal),Kwamhlanga (Mpumalanga),Kwamsane (KwaZulu-Natal),Kwandengezi (KwaZulu-Natal),Kwanobuhle (Eastern Cape),Kwanokuthula (Western Cape),Kwanonqaba (Western Cape),Kwazakele (Eastern Cape),Laaiplek (Western Cape),Ladismith (Western Cape),Lady Frere (Eastern Cape),Lady Grey (Eastern Cape),Ladybrand (Free State),Ladysmith (KwaZulu-Natal),Laersdrift (Limpopo),Laingsburg (Western Cape),Lambertsbaai (Western Cape),Lamontville (KwaZulu-Natal),Langa (Western Cape),Langebaan (Western Cape),Langlaagte (Gauteng),Lansdowne (Western Cape),Laudium (Gauteng),Leboeng (Limpopo),Lebowakgomo (Limpopo),Leeudoringstad (North West),Lehurutshe (North West),Lenasia (Gauteng),Lenasia South (Gauteng),Lephalale (Limpopo),Leslie (Mpumalanga),Lethabong (North West),Lethlabile (North West),Letsitele (Limpopo),Levubu (Limpopo),Libode (Eastern Cape),Lichtenburg (North West),Lime Acres (Northern Cape),Linden (Gauteng),Lindley (Free State),Lingelethu West (Western Cape),Loate (Gauteng),Loeriesfontein (Northern Cape),Lomanyaneng (North West),Lothair (Mpumalanga),Louwsburg (KwaZulu-Natal),Low'S Creek (Mpumalanga),Loxton (Northern Cape),Luckhoff (Free State),Lukholweni (Eastern Cape),Lulekani (Limpopo),Lundean'S Nek (Eastern Cape),Lusikisiki (Eastern Cape),Lutzville (Western Cape),Lydenburg (Mpumalanga),Lyttelton (Gauteng),Maake (Limpopo),Maartenshoop (Mpumalanga),Mabopane (Gauteng),Macassar (Western Cape),Machadodorp (Mpumalanga),Macleantown (Eastern Cape),Maclear (Eastern Cape),Madadeni (KwaZulu-Natal),Madibogo (North West),Madikwe (North West),Mafikeng (North West),Mafube (Free State),Magaliesberg (Gauteng),Magatle (Limpopo),Magudu (KwaZulu-Natal),Mahamba (Mpumalanga),Mahlabathini (KwaZulu-Natal),Mahwelereng (Limpopo),Maitland (Western Cape),Makapanstad (North West),Makgobistad (North West),Makhado (Limpopo),Makuya (Limpopo),Makwane (Free State),Makwassie (North West),Malamulele (Limpopo),Maleboho (Limpopo),Malelane (Mpumalanga),Maletswai (Eastern Cape),Malipsdrift (Limpopo),Malmesbury (Western Cape),Maluti (Eastern Cape),Malvern (KwaZulu-Natal),Mamelodi (Gauteng),Mamelodi East (Gauteng),Mandeni (KwaZulu-Natal),Manenberg (Western Cape),Mangaung (Free State),Mankweng (Limpopo),Maokeng (Free State),Maphumulo (KwaZulu-Natal),Mara (Limpopo),Marble Hall (Limpopo),Margate (KwaZulu-Natal),Mariannhill (KwaZulu-Natal),Marikana (North West),Marquard (Free State),Marydale (Northern Cape),Masisi (Limpopo),Masoyi (Mpumalanga),Matatiele (Eastern Cape),Matlala (Limpopo),Matsulu (Mpumalanga),Mayflower (Mpumalanga),Mayville (KwaZulu-Natal),Mbazwana (KwaZulu-Natal),Mbekweni (Western Cape),Mbizeni (Eastern Cape),Mbongolwane (KwaZulu-Natal),Mbuzini (Mpumalanga),Mcgregor (Western Cape),Mdantsane (Eastern Cape),Meadowlands (Gauteng),Mecklenburg (Limpopo),Mehlomnyama (KwaZulu-Natal),Melkbosstrand (Western Cape),Melmoth (KwaZulu-Natal),Meloding (Free State),Memel (Free State),Meyerton (Gauteng),Mfuleni (Western Cape),Mhala+A11 (Mpumalanga),Mhluzi (Mpumalanga),Mid Illovo (KwaZulu-Natal),Middelburg (Mpumalanga),Middelburg (Ec) (Eastern Cape),Middelpos (Northern Cape),Middledrift (Eastern Cape),Midrand (Gauteng),Milnerton (Western Cape),Mitchells Plain (Western Cape),Mkhuze (KwaZulu-Natal),Mmabatho (North West),Mmakau (North West),Mmametlake (Mpumalanga),Modder Rivier (Northern Cape),Modderfontein (Gauteng),Modimolle (Limpopo),Modjadjiskloof (Limpopo),Mogwadi (Limpopo),Mogwase (North West),Mokopane (Limpopo),Mokopong (North West),Molteno (Eastern Cape),Mondeor (Gauteng),Mondlo (KwaZulu-Natal),Montagu (Western Cape),Montclair (KwaZulu-Natal),Mooi Rivier (KwaZulu-Natal),Mooifontein (North West),Mooinooi (North West),Mooiplaas (Eastern Cape),Moorreesburg (Western Cape),Morebeng (Limpopo),Morgenzon (Mpumalanga),Moroka (Gauteng),Morokweng (North West),Mossel Bay (Western Cape),Motetema (Limpopo),Motherwell (Eastern Cape),Mothibistad (Northern Cape),Mothutlung (North West),Motswedi (North West),Mount Ayliff (Eastern Cape),Mount Fletcher (Eastern Cape),Mount Frere (Eastern Cape),Mount Road (Eastern Cape),Mountain Rise (KwaZulu-Natal),Mowbray (Western Cape),Moyeni (Eastern Cape),Mphephu (Limpopo),Mpisi (Eastern Cape),Mpophomeni (KwaZulu-Natal),Mpumalanga-Kzn (KwaZulu-Natal),Mpungamhlophe (KwaZulu-Natal),Mqanduli (Eastern Cape),Msinga (KwaZulu-Natal),Msinsini (KwaZulu-Natal),Msobomvu (Eastern Cape),Mthatha (Eastern Cape),Mtontsasa (Eastern Cape),Mtubatuba (KwaZulu-Natal),Mtunzini (KwaZulu-Natal),Muden (KwaZulu-Natal),Muizenberg (Western Cape),Muldersdrift (Gauteng),Murraysburg (Western Cape),Musina (Limpopo),Mutale (Limpopo),Mzamba (Eastern Cape),Nababeep (Northern Cape),Naboomspruit (Limpopo),Naledi (Gauteng),Namahadi (Free State),Namakgale (Limpopo),Napier (Western Cape),Navalsig (Free State),Ndevana (Eastern Cape),Ndwedwe (KwaZulu-Natal),Nebo (Limpopo),Nelspruit (Mpumalanga),New Brighton (Eastern Cape),New Hanover (KwaZulu-Natal),Newark (KwaZulu-Natal),Newcastle (KwaZulu-Natal),Newlands East (KwaZulu-Natal),Ngangelizwe (Eastern Cape),Ngodwana (Mpumalanga),Ngome (KwaZulu-Natal),Ngqeleni (Eastern Cape),Nhlanhleni (KwaZulu-Natal),Niekerkshoop (Northern Cape),Nietverdiend (North West),Nieuwoudtville (Northern Cape),Nigel (Gauteng),Nkandla (KwaZulu-Natal),Noenieput (Northern Cape),Nondweni (KwaZulu-Natal),Nongoma (KwaZulu-Natal),Norkem Park (Gauteng),Normandien (KwaZulu-Natal),Northam (Limpopo),Norvalspont (Northern Cape),Norwood (Gauteng),Nottingham Road (KwaZulu-Natal),Noupoort (Northern Cape),Nqamakwe (Eastern Cape),Nquthu (KwaZulu-Natal),Nsuze (KwaZulu-Natal),Ntabamhlophe (KwaZulu-Natal),Ntabankulu (Eastern Cape),Ntabethemba (Eastern Cape),Ntambanana (KwaZulu-Natal),Ntsikeni (Eastern Cape),Nuwerus (Western Cape),Nyanga (Western Cape),Nyoni (KwaZulu-Natal),Ocean View (Western Cape),Odendaalsrus (Free State),Ogies (Mpumalanga),Ohrigstad (Limpopo),Olifantsfontein (Gauteng),Olifantshoek (Northern Cape),Onseepkans (Northern Cape),Orange Farms (Gauteng),Oranjeville (Free State),Orkney (North West),Orlando (Gauteng),Osizweni (KwaZulu-Natal),Ottosdal (North West),Ottoshoop (North West),Oudtshoorn (Western Cape),Paarl (Western Cape),Paarl East (Western Cape),Pabalello (Northern Cape),Pacaltsdorp (Western Cape),Paddock (KwaZulu-Natal),Palmietfontein (Eastern Cape),Pampierstat (Northern Cape),Parkview (Gauteng),Parkweg (Free State),Parow (Western Cape),Parys (Free State),Patensie (Eastern Cape),Paterson (Eastern Cape),Paul Roux (Free State),Paulpietersburg (KwaZulu-Natal),Pearston (Eastern Cape),Peddie (Eastern Cape),Pella (Northern Cape),Perdekop (Mpumalanga),Petrus Steyn (Free State),Petrusburg (Free State),Petrusville (Northern Cape),Phalaborwa (Limpopo),Philadelphia (Western Cape),Philippi (Western Cape),Philippi-East (Western Cape),Philippolis (Free State),Philipstown (Northern Cape),Phoenix (KwaZulu-Natal),Phokeng (North West),Phuthaditjhaba (Free State),Pienaarsrivier (Limpopo),Piet Plessis (North West),Piet Retief (Mpumalanga),Pietermaritzburg (KwaZulu-Natal),Piketberg (Western Cape),Pilgrim'S Rest (Mpumalanga),Pinelands (Western Cape),Pinetown (KwaZulu-Natal),Plessislaer (KwaZulu-Natal),Plettenberg Bay (Western Cape),Plooysburg (Northern Cape),Pofadder (Northern Cape),Point (KwaZulu-Natal),Polokwane (Limpopo),Pomeroy (KwaZulu-Natal),Pongola (KwaZulu-Natal),Port Alfred (Eastern Cape),Port Edward (KwaZulu-Natal),Port Nolloth (Northern Cape),Port Shepstone (KwaZulu-Natal),Port St Johns (Eastern Cape),Porterville (Western Cape),Postmasburg (Northern Cape),Potchefstroom (North West),Prestbury (KwaZulu-Natal),Pretoria Central (Gauteng),Pretoria Moot (Gauteng),Pretoria North (Gauteng),Pretoria West (Gauteng),Prieska (Northern Cape),Primrose (Gauteng),Prince Alfred (Western Cape),Prins Albert (Western Cape),Protea Glen (Gauteng),Pudimoe (North West),Punzana (Eastern Cape),Putfontein (Gauteng),Queenstown (Eastern Cape),Qumbu (Eastern Cape),Rabie Ridge (Gauteng),Randburg (Gauteng),Randfontein (Gauteng),Rankin'S Pass (Limpopo),Ravensmead (Western Cape),Rawsonville (Western Cape),Reddersburg (Free State),Redelinghuys (Western Cape),Reigerpark (Gauteng),Reitgat (Gauteng),Reitz (Free State),Reivilo (North West),Rhodes (Eastern Cape),Richards Bay (KwaZulu-Natal),Richmond (Northern Cape),Richmond (KwaZulu-Natal),Riebeeck East (Eastern Cape),Riebeeck West (Western Cape),Rietbron (Eastern Cape),Rietfontein (Northern Cape),Rietvlei (KwaZulu-Natal),Ritavi (Limpopo),Riversdal (Western Cape),Riviersonderend (Western Cape),Roadside (Free State),Robertson (Western Cape),Roedtan (Limpopo),Rondebosch (Western Cape),Roodepan (Northern Cape),Roodepoort (Gauteng),Rooiberg (Limpopo),Roossenekal (Limpopo),Rosebank (Gauteng),Rosedale (Northern Cape),Rosendal (Free State),Rossouw (Eastern Cape),Rouxville (Free State),Rust De Winter (Limpopo),Rustenburg (North West),Saamboubrug (Limpopo),Sabie (Mpumalanga),Sakhile (Mpumalanga),Saldanha (Western Cape),Sandringham (Gauteng),Sandton (Gauteng),Sannieshof (North West),Saron (Western Cape),Saselamani (Limpopo),Sasolburg (Free State),Sawoti (KwaZulu-Natal),Schoemansdal (Mpumalanga),Schweizer-Reneke (North West),Scottburgh (KwaZulu-Natal),Sea Point (Western Cape),Seafield (Eastern Cape),Sebenza (Gauteng),Sebokeng (Gauteng),Secunda (Mpumalanga),Sekgosese (Limpopo),Sekhukhune (Limpopo),Selosesha (Free State),Senekal (Free State),Senwabarwana (Limpopo),Seshego (Limpopo),Setlagole (North West),Seven Fountains (Eastern Cape),Severn (Northern Cape),Seymour (Eastern Cape),Sharpeville (Gauteng),Sheepmoor (Mpumalanga),Siloam (Limpopo),Silverton (Gauteng),Simon'S Town (Western Cape),Sinoville (Gauteng),Siyabuswa (Mpumalanga),Skukuza (Mpumalanga),Smithfield (Free State),Somerset East (Eastern Cape),Somerset West (Western Cape),Sophiatown (Gauteng),Soshanguve (Gauteng),Southport (KwaZulu-Natal),Soutpan (Free State),Springbok (Northern Cape),Springfontein (Free State),Springs (Gauteng),St Faiths (KwaZulu-Natal),St Francis Bay (Eastern Cape),St Helena Bay (Western Cape),Standerton (Mpumalanga),Stanford (Western Cape),Steenberg (Western Cape),Steinkopf (Northern Cape),Stella (North West),Stellenbosch (Western Cape),Sterkspruit (Eastern Cape),Sterkstroom (Eastern Cape),Steunmekaar (Free State),Steve Vukile Tshwete (Eastern Cape),Steynsburg (Eastern Cape),Steynsrus (Free State),Steytlerville (Eastern Cape),Stilfontein (North West),Still Bay (Western Cape),Storms River (Eastern Cape),Strand (Western Cape),Strandfontein (Western Cape),Struisbaai (Western Cape),Strydenburg (Northern Cape),Stutterheim (Eastern Cape),Sulenkama (Eastern Cape),Sun City (North West),Sundra (Mpumalanga),Sundumbili (KwaZulu-Natal),Sunnyside (Gauteng),Sunrise (Northern Cape),Sutherland (Northern Cape),Suurbraak (Western Cape),Swartberg (KwaZulu-Natal),Swartkops (Eastern Cape),Swartruggens (North West),Swellendam (Western Cape),Sydenham (KwaZulu-Natal),Tabase (Eastern Cape),Table Bay Harbour (Western Cape),Table View (Western Cape),Tamara (Eastern Cape),Tarkastad (Eastern Cape),Taung (North West),Taylors Halt (KwaZulu-Natal),Temba (Gauteng),Tembisa (Gauteng),Thabanchu (Free State),Thabazimbi (Limpopo),Thabong (Free State),Thembalethu (Western Cape),Theunissen (Free State),Thohoyandou (Limpopo),Thomas River (Eastern Cape),Thornhill (Eastern Cape),Thornhill Ciskei (Eastern Cape),Thornville (KwaZulu-Natal),Tierpoort (Free State),Tina Falls (Eastern Cape),Tinmyne (Limpopo),Tlhabane (North West),Tokoza (Gauteng),Tolwe (Limpopo),Tom Burke (Limpopo),Tonga (Mpumalanga),Tongaat (KwaZulu-Natal),Touws River (Western Cape),Town Hill (KwaZulu-Natal),Trichardt (Mpumalanga),Tromsburg (Free State),Tsakane (Gauteng),Tseki (Free State),Tseseng (Free State),Tshamutumbu (Limpopo),Tshaulu (Limpopo),Tshidilamolomo (North West),Tshilwavhusiku (Limpopo),Tshitale (Limpopo),Tsineng (North West),Tsolo (Eastern Cape),Tsomo (Eastern Cape),Tubatse (Limpopo),Tuinplaas (Limpopo),Tulbagh (Western Cape),Tumahole (Free State),Tweefontein (Mpumalanga),Tweeling (Free State),Tweespruit (Free State),Tyefu (Eastern Cape),Tylden (Eastern Cape),Tzaneen (Limpopo),Ugie (Eastern Cape),Uitenhage (Eastern Cape),Ulundi (KwaZulu-Natal),Umbilo (KwaZulu-Natal),Umbumbulu (KwaZulu-Natal),Umhlali (KwaZulu-Natal),Umkomaas (KwaZulu-Natal),Umlazi (KwaZulu-Natal),Umsunduzi (KwaZulu-Natal),Umzimkhulu (KwaZulu-Natal),Umzinto (KwaZulu-Natal),Uniondale (Western Cape),Upington (Northern Cape),Upper Tugela (KwaZulu-Natal),Utrecht (KwaZulu-Natal),Vaalbank (Mpumalanga),Vaalwater (Limpopo),Val (Mpumalanga),Van Reenen (KwaZulu-Natal),Van Zylsrus (Northern Cape),Vanderbijlpark (Gauteng),Vanderkloof (Northern Cape),Vanrhynsdorp (Western Cape),Vanstadensrus (Free State),Vanwyksvlei (Northern Cape),Ventersburg (Free State),Ventersdorp (North West),Venterstad (Eastern Cape),Vereeniging (Gauteng),Verena (Mpumalanga),Verkeerdevlei (Free State),Verkykerskop (Free State),Verulam (KwaZulu-Natal),Victoria West (Northern Cape),Vierfontein (Free State),Viljoensdrif (Free State),Viljoenskroon (Free State),Villa Nora (Limpopo),Villieria (Gauteng),Villiers (Free State),Villiersdorp (Western Cape),Vioolsdrift (Northern Cape),Virginia (Free State),Volksrust (Mpumalanga),Vorsterhoop (North West),Vosburg (Northern Cape),Vosloorus (Gauteng),Vosman (Mpumalanga),Vrede (Free State),Vredefort (Free State),Vredenburg (Western Cape),Vredendal (Western Cape),Vryburg (North West),Vryheid (KwaZulu-Natal),Vulindlela (Eastern Cape),Vuwani (Limpopo),Wakkerstroom (Mpumalanga),Walmer (Eastern Cape),Wanda (Free State),Warden (Free State),Warrenton (Northern Cape),Wartburg (KwaZulu-Natal),Wasbank (KwaZulu-Natal),Waterpoort (Limpopo),Waterval (Limpopo),Waterval Boven (Mpumalanga),Weenen (KwaZulu-Natal),Welbekend (Gauteng),Welkom (Free State),Wellington (Western Cape),Wembezi (KwaZulu-Natal),Wentworth (KwaZulu-Natal),Wepener (Free State),Wesselbron (Free State),Westonaria (Gauteng),Westville (KwaZulu-Natal),Whittlesea (Eastern Cape),Wierdabrug (Gauteng),Williston (Northern Cape),Willowmore (Eastern Cape),Willowvale (Eastern Cape),Winburg (Free State),Windsorton (Northern Cape),Winterton (KwaZulu-Natal),Witbank (Mpumalanga),Witdraai (Northern Cape),Witpoort (Limpopo),Witrivier (Mpumalanga),Wolmaransstad (North West),Wolseley (Western Cape),Wolwefontein (Eastern Cape),Wonderboompoort (Gauteng),Woodstock (Western Cape),Worcester (Western Cape),Wrenchville (Northern Cape),Wynberg (Western Cape),Yeoville (Gauteng),Zaaiplaas (Limpopo),Zamuxolo (Eastern Cape),Zandela (Free State),Zastron (Free State),Zebediela (Limpopo),Zeerust (North West),Zele (Eastern Cape),Zonkizizwe (Gauteng),Zwelitsha (Eastern Cape),",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "dropdown",
+			"identifier": "station",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "4",
+			"cols": "0",
+			"value": "",
+			"label": "Additional Police stations",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "police_stations_additional",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "70"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "4",
+			"cols": "0",
+			"value": "",
+			"label": "Investigating Officer",
+			"enumerations": "Peterson Al,Smith John",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "dropdown-add-one",
+			"identifier": "investigating_offier_uuid",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "4",
+			"cols": "0",
+			"value": "",
+			"label": "Additional Investigating Officers",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "text",
+			"identifier": "additionall_invest_officers",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "70"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Court Case Number",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "text",
+			"identifier": "case_number",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "DateTime",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Remanded to date",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "emptyDate",
+			"identifier": "date_remanded_to",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "long?",
+			"colspan": "2",
+			"cols": "0",
+			"value": "",
+			"label": "Status",
+			"enumerations": "Not enrolled,Remanded,Enrolled",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "select",
+			"identifier": "status",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "display",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Conditions for Bail",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "display-header",
+			"identifier": "bail_conditions",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Not to contact witness",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "checkbox",
+			"identifier": "not_contact_witness",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "2",
+			"cols": "0",
+			"value": "",
+			"label": "Must report to station once a week",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "checkbox",
+			"identifier": "report_once_week",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Under house arrest",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "checkbox",
+			"identifier": "house_arrest",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "Maintenance",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "checkbox",
+			"identifier": "maintenance",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "0",
+			"cols": "0",
+			"value": "",
+			"label": "May not leave country",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "checkbox",
+			"identifier": "not_leave_country",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "2",
+			"cols": "0",
+			"value": "",
+			"label": "Submit all travel documents",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "checkbox",
+			"identifier": "submit_travel_docs",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "bool",
+			"colspan": "1",
+			"cols": "0",
+			"value": "",
+			"label": "Other conditions for bail (specifiy)",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "checkbox",
+			"identifier": "other_conditions_bail",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"datatype": "string",
+			"colspan": "2",
+			"cols": "0",
+			"value": "",
+			"label": "Other Conditions for bail (specify)",
+			"visible": "false",
+			"closeRow": "true",
+			"inputType": "textarea",
+			"identifier": "conditions_for_bail",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "0"
+		}, {
+			"rows": "0",
+			"identifier": "form-save",
+			"width": "770",
+			"datatype": "display",
+			"colspan": "3",
+			"cols": "0",
+			"value": "",
+			"label": "Save",
+			"visible": "true",
+			"closeRow": "true",
+			"inputType": "button",
+			"height": "30",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			]
+		}, {
+			"rows": "null",
+			"datatype": "display",
+			"colspan": "null",
+			"cols": "null",
+			"value": "",
+			"label": "END TABLE",
+			"visible": "true",
+			"closeRow": "false",
+			"inputType": "display-tbl-end",
+			"identifier": "field1428",
+			"options": [
+				{
+					"name": "optional",
+					"value": "true"
+				}
+			],
+			"size": "null"
+		}
+	],
+	"flow": {
+		"flowOrder": 3,
+		"id": 216,
+		"name": "Docket"
+	},
+	"label": "Arrest Docket",
+	"formOrder": "2",
+	"formCollection": "arrestDockets",
+	"formType": {
+		"id": 1,
+		"name": "Basic Form"
+	},
+	"couchapp": {}
+}
