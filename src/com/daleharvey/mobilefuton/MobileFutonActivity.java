@@ -83,40 +83,45 @@ public class MobileFutonActivity extends Activity {
 		    String param = (ip == null) ? "" : "?ip=" + ip;
 		    
 		    Log.v(TAG, "host: " + host + " ip: " + ip);
+		    AndCouch dbTestResults = null;
 
 		    // Load MobileFuton
 		    try {
-				AndCouch.put(url + "mobilefuton", null);
-			} catch (JSONException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			ensureLoadDoc("mobilefuton", url, "_design/mobilefuton", "mobilefuton.json");
-			
-			// Load egra
-			try {
-				AndCouch.put(url + "egra", null);
-			} catch (JSONException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			ensureLoadDoc("egra", url, "_design/app", "egra.json.jpg");
-			
-			// Load contents of docs (formerly _docs)
-			Log.v(TAG, "Getting a list of docs.");
-			AssetManager assets = getAssets();
-			String[] fileNames = null;
-			try {
-				fileNames = assets.list("docs");
-				for (String fileName : fileNames) {
-			        Log.v(TAG, "File: " + fileName);
-			        ensureLoadDoc("egra", url, null, "docs/" + fileName);
-			    }
-				Log.v(TAG, "Launchng app at url: " + url);
-			} catch (IOException e) {
-				Log.v(TAG, "Error getting docs.");
-				e.printStackTrace();
-			}
+		    	dbTestResults = AndCouch.put(url + "mobilefuton", null);
+
+		    } catch (JSONException e1) {
+		    	// TODO Auto-generated catch block
+		    	e1.printStackTrace();
+		    }
+
+		    if (dbTestResults.status != 412) {
+		    	ensureLoadDoc("mobilefuton", url, "_design/mobilefuton", "mobilefuton.json");
+
+		    	// Load egra
+		    	try {
+		    		AndCouch.put(url + "egra", null);
+		    	} catch (JSONException e1) {
+		    		// TODO Auto-generated catch block
+		    		e1.printStackTrace();
+		    	}
+		    	ensureLoadDoc("egra", url, "_design/app", "egra.json.jpg");
+
+		    	// Load contents of docs (formerly _docs)
+		    	Log.v(TAG, "Getting a list of docs.");
+		    	AssetManager assets = getAssets();
+		    	String[] fileNames = null;
+		    	try {
+		    		fileNames = assets.list("docs");
+		    		for (String fileName : fileNames) {
+		    			Log.v(TAG, "File: " + fileName);
+		    			ensureLoadDoc("egra", url, null, "docs/" + fileName);
+		    		}
+		    		Log.v(TAG, "Launchng app at url: " + url);
+		    	} catch (IOException e) {
+		    		Log.v(TAG, "Error getting docs.");
+		    		e.printStackTrace();
+		    	}
+		    }
 
 			String couchAppUrl = url + "egra/_design/app/index.html";
 			//launchCouchApp(url + "egra/_design/app/index.html" + param);
@@ -328,17 +333,17 @@ public class MobileFutonActivity extends Activity {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				String cleanUrlA = uri.toString();
-				Log.v(TAG, "URL toString: " + cleanUrlA + " path: " + path);
+				//String cleanUrlA = uri.toString();
+				//Log.v(TAG, "URL toString: " + cleanUrlA + " path: " + path);
 				
-				URI uri2 = null; 
-				try {
-					uri2 = new URI(docUrl.replace(" ", "%20"));
-					Log.v(TAG, "uri2: " + uri2);
-				} catch (URISyntaxException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+//				URI uri2 = null; 
+//				try {
+//					uri2 = new URI(docUrl.replace(" ", "%20"));
+//					//Log.v(TAG, "uri2: " + uri2);
+//				} catch (URISyntaxException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
 				
 				String cleanUrl = uri.toASCIIString();
 
