@@ -10,17 +10,14 @@ The workaround is to rename any files over 1 MB with an extention that is one of
 See [Dealing with Asset Compression in Android Apps](http://ponystyle.com/blog/2010/03/26/dealing-with-asset-compression-in-android-apps/) for more info.
 Note - this is no longer an issue w/ Android 2.3.
 
-    couchapp push --export > ../Android-Tims-MobileFuton/assets/odk.json.jpg
+    couchapp push --export > ../Android-Tangerine-MobileFuton/assets/egra.json.jpg
     
 ## Installing the app
 
-Here is the code from [MobileFutonActivity](https://github.com/vetula/Android-Tims-MobileFuton/blob/master/src/com/daleharvey/mobilefuton/MobileFutonActivity.java) that installs the couchapps and launches my app instead of Mobile Futon:
+Here is the code from [MobileFutonActivity](https://github.com/vetula/Android-Tangerine-MobileFuton/blob/master/src/com/daleharvey/mobilefuton/MobileFutonActivity.java) that installs the couchapps and launches my app instead of Mobile Futon:
 
     ensureLoadDoc("mobilefuton", url, "_design/mobilefuton", "mobilefuton.json");
-    ensureLoadDoc("odk", url, "_design/render", "odk.json.jpg");
-    ensureLoadDoc("odk", url, "PatientRegistration", "PatientRegistration.json");
-    ensureLoadDoc("odk", url, "ArrestDocket", "ArrestDocket.json");
-    //launchFuton(url + "mobilefuton/_design/mobilefuton/index.html" + param);
-    launchFuton(url + "odk/_design/render/index.html" + param);
+	ensureLoadDoc("egra", url, "_design/app", "egra.json.jpg");
+	launchFuton(url + "egra/_design/app/index.html" + param);
     
 I made some minor changes to Dale Harvey's code to load non-designDocs.

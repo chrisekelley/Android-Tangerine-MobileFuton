@@ -1,0 +1,22 @@
+{
+  "pageType": "UntimedSubtest",
+  "pageId": "InitialSound",
+  "_rev": "4-5f415a71110cd0ae79e1a631fece5f66",
+  "questions": [
+    "dur /d'/",
+    "lac /lllll/",
+    "car /k'/",
+    "sac /ssssss/",
+    "jour /jjjjj/",
+    "fil /fffff/",
+    "tour /t'/",
+    "balle /b'/",
+    "par /p'/",
+    "vol /vvvv/"
+  ],
+  "_id": "Assessment.EGRA Prototype.InitialSound",
+  "urlPath": "Assessment.EGRA Prototype.InitialSound",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}

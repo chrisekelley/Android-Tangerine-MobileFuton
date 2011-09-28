@@ -1,0 +1,11 @@
+{
+  "name": "Test",
+  "_id": "Assessment.Test",
+  "urlPathsForPages": [
+    "Assessment.The Gambia EGRA May 2011.OralPassageReading",
+    "Assessment.Test.Letters",
+    "Assessment.The Gambia EGRA May 2011.InventedWords"
+  ],
+  "couchapp": {
+  }
+}

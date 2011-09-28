@@ -1,0 +1,10 @@
+{
+  "pageType": "JQueryLogin",
+  "pageId": "Login",
+  "_rev": "19-efb4ff4df87f191a214189ea2f8269b6",
+  "_id": "Assessment.EGRA Prototype.Login",
+  "urlPath": "Assessment.EGRA Prototype.Login",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}

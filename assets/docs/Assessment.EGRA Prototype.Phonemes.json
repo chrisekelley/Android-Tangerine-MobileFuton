@@ -1,0 +1,54 @@
+{
+  "pageType": "PhonemePage",
+  "pageId": "Phonemes",
+  "words": [
+    {
+      "word": "up",
+      "number-of-sounds": "2",
+      "phonemes": [
+        "uh",
+        "p"
+      ]
+    },
+    {
+      "word": "am",
+      "number-of-sounds": "2",
+      "phonemes": [
+        "ah",
+        "m"
+      ]
+    },
+    {
+      "word": "is",
+      "number-of-sounds": "2",
+      "phonemes": [
+        "i",
+        "z"
+      ]
+    },
+    {
+      "word": "top",
+      "number-of-sounds": "3",
+      "phonemes": [
+        "t",
+        "o",
+        "p"
+      ]
+    },
+    {
+      "word": "thank",
+      "number-of-sounds": "3",
+      "phonemes": [
+        "th",
+        "a",
+        "ng",
+        "k"
+      ]
+    }
+  ],
+  "_id": "Assessment.EGRA Prototype.Phonemes",
+  "urlScheme": "http",
+  "urlPath": "Assessment.EGRA Prototype.Phonemes",
+  "couchapp": {
+  }
+}

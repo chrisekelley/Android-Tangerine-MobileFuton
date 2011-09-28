@@ -10,6 +10,9 @@ import java.io.InputStream;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Enumeration;
@@ -78,13 +81,46 @@ public class MobileFutonActivity extends Activity {
 			String url = "http://" + host + ":" + Integer.toString(port) + "/";
 		    String ip = getLocalIpAddress();
 		    String param = (ip == null) ? "" : "?ip=" + ip;
+		    
+		    Log.v(TAG, "host: " + host + " ip: " + ip);
 
+		    // Load MobileFuton
+		    try {
+				AndCouch.put(url + "mobilefuton", null);
+			} catch (JSONException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			ensureLoadDoc("mobilefuton", url, "_design/mobilefuton", "mobilefuton.json");
-			ensureLoadDoc("odk", url, "_design/render", "odk.json.jpg");
-			ensureLoadDoc("odk", url, "PatientRegistration", "PatientRegistration.json");
-			ensureLoadDoc("odk", url, "ArrestDocket", "ArrestDocket.json");
-			//launchFuton(url + "mobilefuton/_design/mobilefuton/index.html" + param);
-			launchFuton(url + "odk/_design/render/index.html" + param);
+			
+			// Load egra
+			try {
+				AndCouch.put(url + "egra", null);
+			} catch (JSONException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			ensureLoadDoc("egra", url, "_design/app", "egra.json.jpg");
+			
+			// Load contents of docs (formerly _docs)
+			Log.v(TAG, "Getting a list of docs.");
+			AssetManager assets = getAssets();
+			String[] fileNames = null;
+			try {
+				fileNames = assets.list("docs");
+				for (String fileName : fileNames) {
+			        Log.v(TAG, "File: " + fileName);
+			        ensureLoadDoc("egra", url, null, "docs/" + fileName);
+			    }
+				Log.v(TAG, "Launchng app at url: " + url);
+			} catch (IOException e) {
+				Log.v(TAG, "Error getting docs.");
+				e.printStackTrace();
+			}
+
+			String couchAppUrl = url + "egra/_design/app/index.html";
+			//launchCouchApp(url + "egra/_design/app/index.html" + param);
+			launchCouchApp(couchAppUrl);
 		}
 
 //		public void installing(int completed, int total) {
@@ -145,7 +181,7 @@ public class MobileFutonActivity extends Activity {
 		alert.show();
 	}
 
-	private void launchFuton(String url) {
+	private void launchCouchApp(String url) {
 		webView = new WebView(MobileFutonActivity.this);
 		webView.setWebChromeClient(new WebChromeClient());
 		webView.setWebViewClient(new CustomWebViewClient());
@@ -217,75 +253,118 @@ public class MobileFutonActivity extends Activity {
 	 *  For other documents, it simply puts the file.
 	 *  
 	 * @param dbName - CouchDB name
-	 * @param url
+	 * @param hostPortUrl - e.g.: http://0.0.0.0:5985
 	 * @param docName - doc _id; dbName if null.
 	 * @param fileName
 	 */
-	private void ensureLoadDoc(String dbName, String url, String docName, String fileName) {
+	private void ensureLoadDoc(String dbName, String hostPortUrl, String docName, String fileName) {
 
 		try {
 
-			Boolean toUpdate;
+			//Boolean toUpdate = true;
 			Boolean dDoc = false;
 			String data = null;
 			data = readAsset(getAssets(), fileName);
 			File hashCache = null;
 			String md5 = null;
 
-			if (dbName.equals(fileName)) {
-				dDoc = true;
-				Log.v(TAG, fileName + " is a design document: " + docName + " .");
-			} else {
-				Log.v(TAG, fileName + " is not a design document.");
-			}
+//			if (dbName.equals(fileName)) {
+//				dDoc = true;
+//				Log.v(TAG, fileName + " is a design document: " + docName + " .");
+//			} else {
+//				Log.v(TAG, fileName + " is not a design document.");
+//			}
+//
+//			if (dDoc == true) {
+//				hashCache = new File(CouchbaseMobile.dataPath() + "/couchapps/" + dbName + ".couchapphash");				
+//				md5 = md5(data);
+//				String cachedHash;
+//
+//				try {
+//					cachedHash = readFile(hashCache);
+//					toUpdate = !md5.equals(cachedHash);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//					toUpdate = true;
+//				}
+//			} else {
+//				//TODO: compare to version on server.
+//				toUpdate = true;
+//			}
+			
+			//Log.v(TAG, docName + " toUpdate: " + toUpdate);
 
-			if (dDoc == true) {
-				hashCache = new File(CouchbaseMobile.dataPath() + "/couchapps/" + dbName + ".couchapphash");				
-				md5 = md5(data);
-				String cachedHash;
-
-				try {
-					cachedHash = readFile(hashCache);
-					toUpdate = !md5.equals(cachedHash);
-				} catch (Exception e) {
-					e.printStackTrace();
-					toUpdate = true;
-				}
-			} else {
-				//TODO: compare to version on server.
-				toUpdate = true;
-			}
-
-			if (toUpdate == true) {
+			//if (toUpdate == true) {
 				String docUrl = null;
 				if (docName != null) {
-					docUrl = url + dbName + "/" + docName;
+					docUrl = hostPortUrl + dbName + "/" + docName;
 				} else {
-					docUrl = url + dbName + "/_design/" + dbName;
+					JSONObject json = new JSONObject(data);
+					docName = json.getString("_id");
+					//docUrl = url + dbName + "/_design/" + dbName;
+					docUrl = hostPortUrl + dbName + "/" + docName;
+					Log.v(TAG, fileName + " has the docName: " + docName);
+					Log.v(TAG, "docUrl: " + docUrl);
 				}
+				
+				URL urlObject = new URL(docUrl);
+				String protocol = urlObject.getProtocol();
+				String hostName = urlObject.getHost();
+				int port = urlObject.getPort();
+				String path = urlObject.getPath();
+				String queryString = urlObject.getQuery();
+				
+				URI uri = null;
+				try {
+					uri = new URI(
+							protocol, 
+							null, // userinfo
+							hostName, 
+							port,
+							path,
+							queryString,
+					        null);
+				} catch (URISyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				String cleanUrlA = uri.toString();
+				Log.v(TAG, "URL toString: " + cleanUrlA + " path: " + path);
+				
+				URI uri2 = null; 
+				try {
+					uri2 = new URI(docUrl.replace(" ", "%20"));
+					Log.v(TAG, "uri2: " + uri2);
+				} catch (URISyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				String cleanUrl = uri.toASCIIString();
 
-				AndCouch req = AndCouch.get(docUrl);
+				AndCouch req = AndCouch.get(cleanUrl);
+				Log.v(TAG, "cleanUrl: " + cleanUrl + " req.status: " + req.status);
 
 				if (req.status == 404) {
-					Log.v(TAG, "Uploading " + docUrl);
-					AndCouch.put(url + dbName, null);
-					AndCouch.put(docUrl, data);
+					Log.v(TAG, "Uploading " + cleanUrl);
+					//AndCouch.put(hostPortUrl + dbName, null);
+					AndCouch.put(cleanUrl, data);
 				} else if (req.status == 200) {
-					Log.v(TAG, docUrl + " Found, Updating");
+					Log.v(TAG, cleanUrl + " Found, Updating");
 					String rev = req.json.getString("_rev");
 					JSONObject json = new JSONObject(data);
 					json.put("_rev", rev);
-					AndCouch.put(url + dbName, null);
-					AndCouch.put(docUrl, json.toString());
+					//AndCouch.put(hostPortUrl + dbName, null);
+					AndCouch.put(cleanUrl, json.toString());
 				}
 
 				if (dDoc == true) {
 					new File(hashCache.getParent()).mkdirs();
 					writeFile(hashCache, md5);
 				}
-			} else {
-				Log.v(TAG, fileName + " is up to date.");
-			}
+//			} else {
+//				Log.v(TAG, fileName + " is up to date.");
+//			}
 
 		} catch (IOException e) {
 			e.printStackTrace();

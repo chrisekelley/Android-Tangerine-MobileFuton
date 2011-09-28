@@ -1,0 +1,100 @@
+{
+  "pageType": "StudentInformationPage",
+  "pageId": "StudentInformation",
+  "_rev": "2-2f53343c7dbbe1fb8f9533cc00e0f349",
+  "_id": "Assessment.The Gambia EGRA May 2011.StudentInformation",
+  "radioButtons": [
+    {
+      "label": "School Shift",
+      "name": "school-shift",
+      "type": "horizontal",
+      "options": [
+        "Full day",
+        "Morning",
+        "Afternoon"
+      ]
+    },
+    {
+      "label": "Multigrade class?",
+      "name": "multigrade",
+      "type": "horizontal",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "label": "Grade",
+      "name": "grade",
+      "type": "horizontal",
+      "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ]
+    },
+    {
+      "label": "Class",
+      "name": "class",
+      "type": "horizontal",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "label": "Year of birth",
+      "name": "yearOfBirth",
+      "type": "horizontal",
+      "options": [
+        "Unknown",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007"
+      ]
+    },
+    {
+      "label": "Month of Birth",
+      "name": "monthOfBirth",
+      "type": "horizontal",
+      "options": [
+        "Unknown",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ]
+    },
+    {
+      "label": "Gender",
+      "name": "gender",
+      "type": "horizontal",
+      "options": [
+        "Female",
+        "Male"
+      ]
+    }
+  ],
+  "urlPath": "Assessment.The Gambia EGRA May 2011.StudentInformation",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}

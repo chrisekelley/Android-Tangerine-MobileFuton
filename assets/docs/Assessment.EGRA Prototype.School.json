@@ -1,0 +1,88 @@
+{
+  "pageType": "SchoolPage",
+  "pageId": "School",
+  "_rev": "5-c0e9b64ed9afe98226c31a7f9453912e",
+  "schools": [
+    {
+      "name": "Lilongwe",
+      "district": "Lilongwe",
+      "schoolId": "1142",
+      "province": "Central"
+    },
+    {
+      "name": "Blantyre",
+      "district": "Blantyre",
+      "schoolId": "2142",
+      "province": "Blantyre"
+    },
+    {
+      "name": "Dedza",
+      "district": "Dedza",
+      "schoolId": "2742",
+      "province": "Central"
+    },
+    {
+      "name": "Mzuzu",
+      "district": "Mzuzu",
+      "schoolId": "9742",
+      "province": "North"
+    },
+    {
+      "name": "Anderson",
+      "district": "Washoe",
+      "schoolId": "2442",
+      "province": "Nevada"
+    },
+    {
+      "name": "Jessie Beck",
+      "district": "Washoe",
+      "schoolId": "2443",
+      "province": "Nevada"
+    },
+    {
+      "name": "Swope",
+      "district": "Washoe",
+      "schoolId": "442",
+      "province": "Nevada"
+    },
+    {
+      "name": "Pine",
+      "district": "Washoe",
+      "schoolId": "4412",
+      "province": "Nevada"
+    },
+    {
+      "name": "Manogue",
+      "district": "Washoe",
+      "schoolId": "42",
+      "province": "Nevada"
+    },
+    {
+      "name": "Reno",
+      "district": "Carson",
+      "schoolId": "142",
+      "province": "Nevada"
+    },
+    {
+      "name": "Carson",
+      "district": "Carson",
+      "schoolId": "144",
+      "province": "Nevada"
+    },
+    {
+      "name": "Truckee",
+      "district": "Sierras",
+      "schoolId": "242",
+      "province": "California"
+    }
+  ],
+  "_id": "Assessment.EGRA Prototype.School",
+  "nameText": "Name",
+  "schoolIdText": "ID",
+  "urlPath": "Assessment.EGRA Prototype.School",
+  "urlScheme": "http",
+  "districtText": "District",
+  "provinceText": "Province",
+  "couchapp": {
+  }
+}

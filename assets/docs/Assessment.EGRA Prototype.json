@@ -1,0 +1,21 @@
+{
+  "name": "EGRA Prototype",
+  "_rev": "19-32310fb27ae9980345f9153fc565721f",
+  "_id": "Assessment.EGRA Prototype",
+  "urlPathsForPages": [
+    "Assessment.EGRA Prototype.Login",
+    "Assessment.EGRA Prototype.DateTime",
+    "Assessment.EGRA Prototype.School",
+    "Assessment.EGRA Prototype.EnumeratorReminders",
+    "Assessment.EGRA Prototype.EnumeratorIntroduction",
+    "Assessment.EGRA Prototype.StudentConsent",
+    "Assessment.EGRA Prototype.StudentInformation",
+    "Assessment.EGRA Prototype.Instructions",
+    "Assessment.EGRA Prototype.InitialSound",
+    "Assessment.EGRA Prototype.Letters",
+    "Assessment.EGRA Prototype.Phonemes",
+    "Assessment.EGRA Prototype.Results"
+  ],
+  "couchapp": {
+  }
+}

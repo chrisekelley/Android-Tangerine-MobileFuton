@@ -1,0 +1,11 @@
+{
+  "pageType": "TextPage",
+  "pageId": "ReadingComprehensionInstructions",
+  "_rev": "3-7e28c41f5d57f24c737e5246db70db8f",
+  "_id": "Assessment.The Gambia EGRA May 2011.ReadingComprehensionInstructions",
+  "content": "Subtest instructions: <br/>\nREMOVE the passage from in front of the child. Say:<b>\n\nNow I am going to ask you a few questions about the story you just read.  Try to answer the questions as well as you can.</b>\n\nReminders:<li>You will only be able to ask questions corresponding to the parts of the story the child read (according to the word you indicated as the last word read).<li>Give the child at most 15 seconds to answer the question, mark the child’s response, and move to the next question.<li>Touch the button that corresponds to the child's answer: [Correct], if they provide the correct answer; [Incorrect] If they provide a wrong answer or if they say they don't know the answer; [No answer] if the child remains silent for more than 15 seconds.</li>",
+  "urlPath": "Assessment.The Gambia EGRA May 2011.ReadingComprehensionInstructions",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}

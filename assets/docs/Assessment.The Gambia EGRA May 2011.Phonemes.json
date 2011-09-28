@@ -1,0 +1,55 @@
+{
+  "pageType": "PhonemePage",
+  "pageId": "Phonemes",
+  "_rev": "2-ee2047f7a4cd9581e3c87bc350d3e9a4",
+  "words": [
+    {
+      "word": "up",
+      "phonemes": [
+        "uh",
+        "p"
+      ],
+      "number-of-sounds": "2"
+    },
+    {
+      "word": "am",
+      "phonemes": [
+        "ah",
+        "m"
+      ],
+      "number-of-sounds": "2"
+    },
+    {
+      "word": "is",
+      "phonemes": [
+        "i",
+        "z"
+      ],
+      "number-of-sounds": "2"
+    },
+    {
+      "word": "top",
+      "phonemes": [
+        "t",
+        "o",
+        "p"
+      ],
+      "number-of-sounds": "3"
+    },
+    {
+      "word": "thank",
+      "phonemes": [
+        "th",
+        "a",
+        "ng",
+        "k"
+      ],
+      "number-of-sounds": "3"
+    }
+  ],
+  "_id": "Assessment.The Gambia EGRA May 2011.Phonemes",
+  "urlPath": "Assessment.The Gambia EGRA May 2011.Phonemes",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}

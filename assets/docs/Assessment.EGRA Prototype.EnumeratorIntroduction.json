@@ -1,0 +1,11 @@
+{
+  "pageType": "TextPage",
+  "pageId": "EnumeratorIntroduction",
+  "_rev": "5-127eb580ecc34f0cc2f54996fb78a890",
+  "_id": "Assessment.EGRA Prototype.EnumeratorIntroduction",
+  "content": "General Instructions :<br/><b>Good morning.  My name is ____  and I live in _____.  I’d like to tell you a little bit about myself. [Number and ages of children; pets; sports; etc]. Could you tell me a little about yourself and your family?</b> <br/> [Wait for response; if student is reluctant, ask question 2, but if they seem comfortable continue to verbal consent].<br/><b>What do you like to do when you are not in school?</b>",
+  "urlPath": "Assessment.EGRA Prototype.EnumeratorIntroduction",
+  "urlScheme": "http",
+  "couchapp": {
+  }
+}
